@@ -1,34 +1,25 @@
 function titleCase(str) {
+  var capArray = [];
+  // Turn string (str) into an array - split(' ')
+  var arrayStr = str.split(' ');
+  console.log(arrayStr);
+
+  // Loop throug each word in the array
+  for (var i = 0; i < arrayStr.length; i++){
+    console.log(arrayStr[i].substring(0,1).toUpperCase() + arrayStr[i].slice(1).toLowerCase());
+    capArray.push(arrayStr[i].substring(0,1).toUpperCase() + arrayStr[i].slice(1).toLowerCase());
+
+  }
+  console.log(capArray);
+  str = capArray.join(' ');
+
   return str;
 }
 
-titleCase("I'm a little tea pot");
+console.log(titleCase("I'm a little tea pot"));
 
-var myArray = ["I'm", "a", "little", "tea", "pot"];
-//console.log(myArray[2].toUpperCase() + myArray[2].substring(1));
-
-//console.log(myArray[2].substring(1).toUpperCase());
-//ITTLE
-
-//console.log(myArray[2].substring(1,6));
-//console.log(myArray[2].substring(1));
-//ittle
-
-//console.log(myArray[2].substring(0,1));
-//l
-
-//console.log(myArray[2].substring(0,1).toUpperCase());
-//L
+//var myArray = ["I'm", "a", "little", "tea", "pot"];
 
 //console.log("little".substring(0,1).toUpperCase());
-//L
-
-//console.log("little".toUpperCase().slice(1));
-//ITTLE
-
-//console.log("little".substring(0,1).toUpperCase().toLowerCase().slice(1));
-// This didn't work
-
-console.log("little".substring(0,1).toUpperCase());
-console.log("little".substring(1,6).toLowerCase());
-console.log("little".slice(1).toLowerCase());
+//console.log("little".substring(1,6).toLowerCase());
+//console.log("little".slice(1).toLowerCase());
