@@ -1,3 +1,6 @@
+// This functions returns the provided string with the first letter of each word
+// capitalized
+
 function titleCase(str) {
   // Array for holding capitalized strings
   var capArray = [];
@@ -34,7 +37,6 @@ console.log(titleCase("HERE IS MY HANDLE HERE IS MY SPOUT"));
 
 //first letter of a string uppercase in JavaScript
 //http://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
-
 
 //Implementation Links
 //JavaScript String substring() Method
